@@ -150,14 +150,14 @@ const newDayCron = new CronJob(
   async () => await startNewDay(),
   null,
   true,
-  "America/Los_Angeles"
+  "Africa/Nairobi"
 );
 const messageCron = new CronJob(
-  "0 08 * * *",
+  "0 08,20 * * *",
   async () => await sendMorningMessage(),
   null,
   true,
-  "America/Los_Angeles"
+  "Africa/Nairobi"
 );
 console.log(
   `newDayCron... running: ${
