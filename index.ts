@@ -7,8 +7,8 @@ import M from "moment";
 import Redis from "redis";
 import { promisify } from "util";
 
-const accountSid = ACd4415dc0e0fa306cfeccd2a68c66b360;
-const authToken = 1af51a0d74472d2c22e43c608c73e2e3;
+const accountSid = "ACd4415dc0e0fa306cfeccd2a68c66b360";
+const authToken = "1af51a0d74472d2c22e43c608c73e2e3";
 
 const twilio = Twilio(accountSid, authToken);
 const redis = Redis.createClient({
