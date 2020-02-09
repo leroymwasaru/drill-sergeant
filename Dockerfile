@@ -2,7 +2,7 @@ FROM node:12.13.0-alpine
 
 RUN apk add --no-cache tzdata
 
-ENV TZ=America/Los_Angeles
+ENV TZ=Africa/Nairobi
 
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 
