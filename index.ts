@@ -103,9 +103,9 @@ async function runTask(number: string, message: string) {
 }
 
 function formatHistorical(historicalTasks: object) {
-  // Puts the last 30 days on an array
+  // Puts the last 7 days on an array
   let calendar = "";
-  for (let i = 30; i >= 0; i--) {
+  for (let i = 7; i >= 0; i--) {
     const currentDate = M().subtract(i, "days");
     const key = currentDate.toDate().toLocaleDateString();
 
